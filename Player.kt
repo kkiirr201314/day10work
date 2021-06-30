@@ -2,7 +2,7 @@ import java.util.*
 
 class Player {
 
-    val name = "madrigal"
+    var name = "madrigal"
         get() = field.capitalize()
         set(value){
             field = value.trim()
