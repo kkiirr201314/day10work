@@ -7,10 +7,10 @@ fun main() {
     val player = Player()
     player.castFireball(5)
 
-    val auraColor = auraColor(isBlessed, healthPoints, isImmortal)
+    val auraColor = auraColor(player.isBlessed, player.healthPoints, player.isImmortal)
 
-    val healthStatus = formatHealthStatus(healthPoints, isBlessed)
-    printPlayerStatus(auraColor, isBlessed, player.name, healthStatus)
+    val healthStatus = formatHealthStatus(player.healthPoints, player.isBlessed)
+    printPlayerStatus(auraColor, player.isBlessed, player.name, healthStatus)
 }
 
 private fun printPlayerStatus(
