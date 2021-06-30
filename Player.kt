@@ -7,6 +7,9 @@ class Player {
         private set(value){
             field = value.trim()
         }
+    var healthPoints = 89
+    var isBlessed = true
+    val isImmortal = false
 
     fun castFireball(numFireball: Int = 2) =
         println("橫空變出一杯火球" + "(x$numFireball)")
