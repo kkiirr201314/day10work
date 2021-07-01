@@ -11,10 +11,10 @@ class Player {
     var isBlessed = true
     private val isImmortal = false
 
-    private fun auraColor(isBlessed: Boolean, healthPoints: Int, isImmortal: Boolean) =
+    private fun auraColor() =
         if (isBlessed && healthPoints > 50 || isImmortal) "綠色" else "無光環"
 
-    private fun formatHealthStatus(healthPoints: Int, isBlessed: Boolean) =
+    private fun formatHealthStatus() =
         when (healthPoints) {
             100 -> "健康狀態極佳"
             in 90..99 -> "有一些小擦傷"
